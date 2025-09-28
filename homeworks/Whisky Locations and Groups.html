@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.8.0.min.js"></script>
+<script type="text/javascript">
+Bokeh.set_log_level("info");
+</script>
+  </head>
+  <body>
+    <div id="a947d0d3-96bf-4ed9-a534-12f08bf03494" data-root-id="p1415" style="display: contents;"></div>
+  
+    <script type="application/json" id="adf7c2e6-6d46-4c86-b732-4110174519b3">
+      {"d8deecca-5833-4ca3-b434-5893a55b2142":{"version":"3.8.0","title":"Bokeh Application","config":{"type":"object","name":"DocumentConfig","id":"p1448","attributes":{"notifications":{"type":"object","name":"Notifications","id":"p1449"}}},"roots":[{"type":"object","name":"Figure","id":"p1415","attributes":{"width":400,"height":500,"x_range":{"type":"object","name":"DataRange1d","id":"p1416"},"y_range":{"type":"object","name":"DataRange1d","id":"p1417"},"x_scale":{"type":"object","name":"LinearScale","id":"p1425"},"y_scale":{"type":"object","name":"LinearScale","id":"p1426"},"title":{"type":"object","name":"Title","id":"p1418","attributes":{"text":"Whisky Locations and Groups"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1445","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1412","attributes":{"selected":{"type":"object","name":"Selection","id":"p1413","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1414"},"data":{"type":"map","entries":[["x",{"type":"ndarray","array":{"type":"bytes","data":"H4sIAAEAAAAC/yWQTyjDYRjHP3t/z3ORlJGkKFlS5OJkJJa04rC0g4aUKy6S5KLkIAc5SXJYLnbgsoOWgxwUSUiLFeZPOEjjtIaJd9vhPXzr8/b9fp71MSHwLqztKAGUxTKlvUvxPwj9XsW4DEMXSjDq5LnZD2Hz2sH9K3n29kwYGBZWigWTNnjDhmDQkEi5CNXZf1eG/UHh6U9YLVeyX0LGMrsvwrHNTee23ydku5Ua2/85r7hblMNvoT4qXHoknydLhQPb/VxrN9hdRVsOG6/CfKNh+sih507oexRKWi03ave7ldCPEO01pFWIxYWEaN4hVm04mRCSVYZMg2HZY/A3G96Sha6KcSXeWbhLLm9HlJmOgn/uRTLWJyyk7oXTOWHpxqFyQdizjr42ZWpE+AfdITybWAEAAA=="},"shape":[86],"dtype":"int32","order":"little"}],["y",{"type":"ndarray","array":{"type":"bytes","data":"H4sIAAEAAAAC/yWQTyjDcRjGPzn5fX/v15DyJ7FY2gEHFzkyLpKD084TBy39UsQSJcrNclouliLJRe1KSjkgrTWz/DssObjQGocty3e/Hd56nnre93meN59UON2ab6+mUBC208JIryJ8KOT6NbUNiuu40LRY6+qkVXNaEj7+qtpsTFg2mIDm7dMitWIR71PEmhUL63VM+mxWlU3jj3CSFGo6hXmjqb8Rwikhei5cHBs86+EyJ2y8C195YfxZ6No3PKFcHhnWDDwIalMzWjS+04rynrA7pggFFFOvguPXFCOa2L3gNdOSEda2bJZKxv/K5DS3Kx38WYueO03bmTDxYhF6sggOKbzZqnf6SAgOVrUV7ru16cjYLnd/ZXpk2jWhR7O/Y1OeUySiNge/JvOMB8ex+Qc6tVZWWAEAAA=="},"shape":[86],"dtype":"int32","order":"little"}],["colors",["#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#0173b2","#de8f05","#de8f05","#de8f05","#de8f05","#de8f05","#029e73","#029e73","#029e73","#029e73","#029e73","#029e73","#029e73","#029e73","#029e73","#029e73","#029e73","#029e73","#029e73","#029e73","#029e73","#029e73","#029e73","#029e73","#029e73","#d55e00","#d55e00","#d55e00","#d55e00","#d55e00","#d55e00","#d55e00","#d55e00","#d55e00","#d55e00","#d55e00","#d55e00","#d55e00","#d55e00","#d55e00","#d55e00","#d55e00","#cc78bc","#cc78bc","#cc78bc","#cc78bc","#cc78bc","#cc78bc","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161","#ca9161"]],["regions",{"type":"ndarray","array":["Highlands","Speyside","Speyside","Speyside","Speyside","Lowlands","Speyside","Speyside","Islay","Highlands","Lowlands","Speyside","Speyside","Highlands","Speyside","Speyside","Speyside","Speyside","Highlands","Islands","Campbelltown","Islands","Islay","Highlands","Highlands","Highlands","Speyside","Speyside","Highlands","Campbelltown","Speyside","Speyside","Speyside","Highlands","Islands","Speyside","Highlands","Speyside","Speyside","Speyside","Highlands","Speyside","Highlands","Speyside","Highlands","Speyside","Highlands","Speyside","Islay","Lowlands","Speyside","Speyside","Highlands","Highlands","Speyside","Speyside","Islands","Highlands","Speyside","Speyside","Speyside","Islay","Highlands","Islands","Islay","Islay","Islay","Speyside","Speyside","Highlands","Speyside","Speyside","Speyside","Highlands","Highlands","Speyside","Speyside","Speyside","Speyside","Speyside","Highlands","Highlands","Highlands","Speyside","Islands","Highlands"],"shape":[86],"dtype":"object","order":"little"}],["distilleries",{"type":"ndarray","array":["Tullibardine","GlenElgin","GlenDeveronMacduff","GlenSpey","Glenfiddich","Glenkinchie","Glenlivet","Inchgower","Bowmore","GlenGarioch","Bladnoch","Linkwood","Benriach","GlenOrd","Speyburn","Belvenie","Tomintoul","RoyalBrackla","Teaninich","ArranIsleOf","GlenScotia","Isle of Jura","Bruichladdich","OldPulteney","Oban","Glenturret","Glenrothes","Mortlach","RoyalLochnagar","Springbank","Glenfarclas","Glendullan","Tormore","Tomatin","Highland Park","Macallan","Glendronach","Auchroisk","Aberlour","Balmenach","Deanston","GlenKeith","Dalmore","Dailuaine","Balblair","Strathmill","Loch Lomond","Tamnavulin","Bunnahabhain","Auchentoshan","Cardhu","GlenMoray","Glenmorangie","AnCnoc","Dufftown","Glenallachie","Tobermory","Dalwhinnie","Craigganmore","Craigallechie","Glenlossie","Laphroig","Clynelish","Talisker","Ardbeg","Lagavulin","Caol Ila","Tamdhu","Strathisla","Ardmore","Speyside","Longmorn","Aultmore","OldFettercairn","BenNevis","Miltonduff","Mannochmore","Benrinnes","Benromach","Knochando","BlairAthol","Glengoyne","Edradour","GlenGrant","Scapa","Aberfeldy"],"shape":[86],"dtype":"object","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p1446","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1447"}}},"glyph":{"type":"object","name":"Scatter","id":"p1442","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":9},"line_color":{"type":"value","value":null},"fill_color":{"type":"field","field":"colors"},"hatch_color":{"type":"field","field":"colors"}}},"nonselection_glyph":{"type":"object","name":"Scatter","id":"p1443","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":9},"line_color":{"type":"value","value":null},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"colors"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"field","field":"colors"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"Scatter","id":"p1444","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"size":{"type":"value","value":9},"line_color":{"type":"value","value":null},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"colors"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"field","field":"colors"},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1424","attributes":{"tools":[{"type":"object","name":"HoverTool","id":"p1437","attributes":{"renderers":"auto","tooltips":[["Distillery","@distilleries"],["Location","(@x, @y)"]],"sort_by":null}},{"type":"object","name":"SaveTool","id":"p1438"}]}},"left":[{"type":"object","name":"LinearAxis","id":"p1432","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1433","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1434"},"major_label_policy":{"type":"object","name":"AllLabels","id":"p1435"}}}],"above":[{"type":"object","name":"LinearAxis","id":"p1427","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1428","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1429"},"major_label_orientation":1.0471975511965976,"major_label_policy":{"type":"object","name":"AllLabels","id":"p1430"}}}],"center":[{"type":"object","name":"Grid","id":"p1431","attributes":{"axis":{"id":"p1427"}}},{"type":"object","name":"Grid","id":"p1436","attributes":{"dimension":1,"axis":{"id":"p1432"}}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('adf7c2e6-6d46-4c86-b732-4110174519b3').textContent;
+              const render_items = [{"docid":"d8deecca-5833-4ca3-b434-5893a55b2142","roots":{"p1415":"a947d0d3-96bf-4ed9-a534-12f08bf03494"},"root_ids":["p1415"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
